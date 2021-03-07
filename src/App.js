@@ -99,13 +99,29 @@ function App() {
       itemName: 'Facet Glove',
       season: 'fall 2013'
     }
-  }
+  };
 
-  
+  // convert inventory object to an array
+  const inventoryArray = Object.values(inventory);
+
+  console.log(inventoryArray);
+
+  // console.log(inventory);
   
   return (
     <div className="App">
       <h1>Veilance Closet</h1>
+      <ul>
+        {
+          inventoryArray.map((item)=>{
+            return (
+              <li>
+              {item.itemName}
+            </li>
+              )
+          }) 
+        }
+      </ul>
     </div>
   );
 }
