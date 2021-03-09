@@ -30,8 +30,22 @@ function App() {
 
       console.log(invItems);
 
-      // use setInvArray to update the the value in the new inventory array
+      // create an empty array
+      // const itemsBySeason = [];
+      // iterate through nested objects in the invData array with .map()
+      const itemID = invItems[0].map((items) => {
+        return items.itemName;
+      });
+      const seasonID = invItems[0].map((items) => {
+        return items.season;
+      })
 
+      console.log(itemID, seasonID);
+      // push nested objects to a new array
+      
+      // use setInvArray to update the the value in the new inventory array
+      setInvArray(invItems);
+      
     });
 
   }, []);
@@ -39,6 +53,17 @@ function App() {
   return (
     <div className="App">
       <h1>Veilance Closet</h1>
+      {/* map invArray in state and display items */}
+      <ul>
+        {
+          invArray.map((item) => {
+            return(
+              <li>{item.season}</li>,
+              <li>{item.itemName}</li>
+            )
+          })
+        }
+      </ul>
     </div>
   );
 }

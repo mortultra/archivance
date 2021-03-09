@@ -244,31 +244,36 @@
     dbRef.on('value', (data) => {
       const inventory =data.val();
 
-      //all seasons in database
-      const seasons = ['spring 2011', 'fall 2011', 'spring 2012', 'fall 2012', 'spring 2013', 'fall 2013'];
+           // // variable for all seasons in database
+      // const seasons = [
+      //   'spring 2011',
+      //   'fall 2011',
+      //   'spring 2012',
+      //   'fall 2012',
+      //   'spring 2013',
+      //   'fall 2013'
+      // ];
 
-      const clothing = {};
+      // const clothingItems = {};
 
-      for (let season of seasons) {
-        clothing[season] = [];
-      };
+      // for (let season of seasons) {
+      //   clothingItems[season] = [];
+      // }
 
-      for (let item in inventory) {
-        const orderedSeason = inventory[item].season;
+      // console.log(clothingItems);
 
-        clothing[orderedSeason].push(inventory[item]);
-      };
-    });
-
-    // dbRef.on('value', (data) => {
-    //   const inventory = data.val();
-    //   console.log(inventory);
-    // });
-
-
-    // METHOD 1 – SIMPLE PUSH
-    // const dbRef = firebase.database().ref();
-
-    dbRef.push(inventory)
+      // for (let itemID in invData) {
+      //   const seasonID = invData[itemID].season;
+      //   clothingItems[seasonID].push(invData[itemID]);
+      //   // console.log(seasonID);
+      // }
       
   }, []);
+
+
+
+
+
+
+
+
