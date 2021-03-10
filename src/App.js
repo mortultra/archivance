@@ -166,7 +166,7 @@ function App() {
       <h1>Veilance Archive</h1>
         <UserSelect filterSeasons={filterSeasons}/>
       {/* map itemInfo in state and display items */}
-        <DisplayItems invArray={invArray} />
+        <DisplayItems invArray={filteredSeasons} />
 
     </div>
   );
