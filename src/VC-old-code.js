@@ -242,7 +242,7 @@
   useEffect(() => {
 
     dbRef.on('value', (data) => {
-      const inventory =data.val();
+      const inventory = data.val();
 
            // // variable for all seasons in database
       // const seasons = [
