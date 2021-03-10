@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import firebase from './firebase.js';
 import { useState, useEffect } from 'react';
 import DisplayItems from './DisplayItems.js';
@@ -163,10 +163,14 @@ function App() {
   
   return (
     <div className="App">
-      <h1>Veilance Archive</h1>
+      <header className="wrapper">
+        <h1>Veilance Archive</h1>
+      </header>
+      <main>
         <UserSelect filterSeasons={filterSeasons}/>
       {/* map itemInfo in state and display items */}
         <DisplayItems invArray={filteredSeasons} />
+      </main>
 
     </div>
   );
