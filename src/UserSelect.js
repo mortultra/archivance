@@ -1,5 +1,7 @@
 import {useState} from 'react';
 
+// This component was realized using the Juno codealong found here: https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/unsplash-codealong.md
+
 const UserSelect = (props) => {
   const {filterSeasons} = props;
   const [userChoice, setUserChoice] = useState('placeholder')

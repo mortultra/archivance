@@ -67,7 +67,7 @@ function App() {
         <DisplayItems invArray={filteredSeasons} />
       </main>
       <footer>
-        <p>Copyright 2021 Juno</p>
+        <p>Made at <a href="https://junocollege.com/">Juno</a> 2021</p>
       </footer>
     </div>
   );
