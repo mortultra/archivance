@@ -10,8 +10,9 @@ function App() {
   //initiliaze state to call the firebase inventory data
   const [invArray, setInvArray] = useState([]); 
   const [filteredSeasons, setFilteredSeasons] = useState([]);
-  // console.log(invArray);
 
+  // This is where the database will be updated with images and product info in the future
+  // commenting it out makes it uncollapsable
   const populate = () => {
     const inventory = [
       {

@@ -15,7 +15,7 @@ const UserSelect = (props) => {
   
   return (
     <form onSubmit={handleSubmit}>
-      <label for="seasonSelection">
+      <label htmlFor="seasonSelection">
         <select 
         name="seasonSelection" 
         id="seasonSelection"
