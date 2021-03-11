@@ -10,5 +10,9 @@ footer {
   bottom: 0;
     p {
       font-size: 1.6rem;
+      a {
+        color: $highlightOrange;
+        text-decoration: none;
+      }
     }
 }
