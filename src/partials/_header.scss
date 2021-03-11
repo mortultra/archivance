@@ -1,7 +1,14 @@
-header {
-  background-color: $primaryDarkGrey;
+.headerFlex {
+  width: 90%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+
 }

@@ -1,15 +1,64 @@
 @import 'partials/setup';
 @import 'partials/variables';
-@import 'partials/AppStyles';
 @import 'partials/header';
 @import 'partials/DisplayItems';
 @import 'partials/UserSelect';
+@import 'partials/footer';
 
+body {
+  background-color: $offWhite;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
 
+// -- FOR FUTURE IMAGES --
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
 
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
 
+header {
+  background-color: $primaryDarkGrey;
+  height: 7.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+main {
+  background-color: $secondaryGrey;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+@media(max-width:460px) {
 
+  .wrapper {
+    width: 90%;
+  }
 
-
+  form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+      select {
+        width: 100%;
+        margin: 0 0 15px;
+      }
+      button {
+        width: 40%;
+      }
+  }
+}

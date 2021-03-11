@@ -230,24 +230,188 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background-color: #f9f9f7;
-}
-
-.wrapper {
-  width: 80%;
-}
-
-header {
-  background-color: #282828;
+.headerFlex {
+  width: 90%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
   font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.itemContainer {
+  width: 80%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 h2 {
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  font-size: 2.3rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #282828;
+}
+
+form {
+  width: 80%;
+  margin: 50px 0;
+  padding: 50px 0 50px 0;
+  text-align: left;
+}
+
+select {
+  width: 70%;
+  font-size: 1.6rem;
+  padding: 5px 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ecc24d;
+  margin-right: 25px;
+}
+
+select:focus {
+  background-color: #ecc24d;
+  border-color: #282828;
+}
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 1.6rem;
+  border: none;
+  padding: 5px 10px;
+  background-color: #f9f9f7;
+  color: #282828;
+  -webkit-box-shadow: 2px 2px 0 #ecc24d;
+          box-shadow: 2px 2px 0 #ecc24d;
+}
+
+button:active, button:focus {
+  position: relative;
+  left: 2px;
+  top: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+footer {
+  background-color: #282828;
+  color: white;
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 1.6rem;
+}
+
+body {
+  background-color: #f9f9f7;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+header {
+  background-color: #282828;
+  height: 7.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  background-color: #f0f0f0;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 460px) {
+  .wrapper {
+    width: 90%;
+  }
+  form {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  form select {
+    width: 100%;
+    margin: 0 0 15px;
+  }
+  form button {
+    width: 40%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

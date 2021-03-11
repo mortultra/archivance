@@ -1,7 +1,7 @@
 const DisplayItems = (props) => {
   const {invArray} = props;
   return (
-    <div>
+    <div className="itemContainer">
       {
         invArray.map((items) => {
           return(

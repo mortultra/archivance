@@ -1,4 +1,17 @@
+.itemContainer {
+  width: 80%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 h2 {
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  font-size: 2.3rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $primaryDarkGrey;
 }

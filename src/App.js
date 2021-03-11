@@ -163,15 +163,18 @@ function App() {
   
   return (
     <div className="App">
-      <header className="wrapper">
-        <h1>Veilance Archive</h1>
+      <header>
+        <div className="headerFlex">
+          <h1>Veilance Archive</h1>
+        </div>
       </header>
-      <main>
-        <UserSelect filterSeasons={filterSeasons}/>
-      {/* map itemInfo in state and display items */}
+      <main className="wrapper">
+        <UserSelect filterSeasons={filterSeasons} />
         <DisplayItems invArray={filteredSeasons} />
       </main>
-
+      <footer>
+        <p>Copyright 2021 Juno</p>
+      </footer>
     </div>
   );
 }

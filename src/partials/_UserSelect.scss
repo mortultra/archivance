@@ -1,0 +1,42 @@
+form {
+  width: 80%;
+  // border: 1px solid coral;
+  margin: 50px 0;
+  padding: 50px 0 50px 0;
+  text-align: left;
+}
+
+select {
+  // appearance: none;
+  width: 70%;
+  font-size: 1.6rem;
+  padding: 5px 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid $highlightOrange;
+  margin-right: 25px;
+  // cursor: inherit;
+}
+
+select:focus {
+  background-color: $highlightOrange;
+  border-color: $primaryDarkGrey;
+}
+
+button {
+  appearance: none;
+  font-size: 1.6rem;
+  border: none;
+  padding: 5px 10px;
+  background-color: $offWhite;
+  color: $primaryDarkGrey;
+  box-shadow: 2px 2px 0 $highlightOrange;
+    &:active,
+    &:focus {
+        position: relative;
+        left: 2px;
+        top: 2px;
+        box-shadow: none;
+    }
+}
