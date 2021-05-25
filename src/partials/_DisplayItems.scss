@@ -16,6 +16,16 @@ h2 {
   border-bottom: 1px solid $primaryDarkGrey;
 }
 
-.archiveImg {
+.archiveFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+.archiveInfo {
   width: 50%;
+}
+
+.archiveImg {
+  margin-right: 20px;
+  min-width: 150px;
 }
