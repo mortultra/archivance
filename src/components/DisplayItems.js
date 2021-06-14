@@ -6,10 +6,11 @@ const DisplayItems = (props) => {
     <div className="itemContainer">
       {
         invArray.map((items) => {
-          return(
+          return (
             <div key={items.key}>
               <h2>{items.itemName}</h2>
               <div className="archiveFlex">
+                {/* {items.img.forEach(item.img)} */}
                 <img className="archiveImg" src={items.img} alt="" />
                 <div className="archiveInfo">
                   <h3>{items.season}</h3>
@@ -17,16 +18,20 @@ const DisplayItems = (props) => {
                   <p>{items.description}</p>
                   <h4>Materials</h4>
                   <ul>
-                    <li>{items.materials}</li>
+                    <li>
+                      <p>{items.materials}</p>
+                    </li>
                   </ul>
                   <h4>Care</h4>
                   <ul>
-                    <li>{items.care}</li>
+                    <li>
+                      <p>{items.care}</p>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
-            )
+          );
           })
         }
     </div>

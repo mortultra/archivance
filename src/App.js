@@ -1,8 +1,8 @@
 import './App.scss';
 import firebase from './firebase.js';
 import { useState, useEffect } from 'react';
-import DisplayItems from './DisplayItems.js';
-import UserSelect from './UserSelect.js';
+import DisplayItems from './components/DisplayItems.js';
+import UserSelect from './components/UserSelect.js';
 
 
 function App() {

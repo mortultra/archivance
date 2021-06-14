@@ -40,6 +40,12 @@ main {
   align-items: center;
 }
 
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
 @media(max-width:460px) {
 
   .wrapper {
