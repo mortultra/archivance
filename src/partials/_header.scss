@@ -1,14 +1,21 @@
 .headerFlex {
   width: 90%;
-  color: white;
+  color: $primaryDarkGrey;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 h1 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: $headingType;
   font-size: 3rem;
-  margin: 0;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
 
+hr {
+  width: 55%;
+  border-bottom: 0.5px solid $primaryDarkGrey;;
 }

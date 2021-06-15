@@ -7,7 +7,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Roboto:400,700', 'Bebas Neue', 'sans-serif']
+    families: ['Playfair Display:400', 'Roboto:400,700', 'Bebas Neue', 'sans-serif']
   }
 });
 

@@ -60,6 +60,7 @@ function App() {
       <header>
         <div className="headerFlex">
           <h1>Archivance</h1>
+          <hr/>
         </div>
       </header>
       <main className="wrapper">
