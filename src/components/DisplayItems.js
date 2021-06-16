@@ -32,9 +32,6 @@ const DisplayItems = (props) => {
           </div>
         );
       })}
-      <div className="siteSummary">
-        <p>Welcome to Archivance, the unofficial Veilance season archive.</p>
-      </div>
     </div>
   );
 }

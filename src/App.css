@@ -326,6 +326,8 @@ p {
   margin-right: 70px;
   min-width: 150px;
   width: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 form {

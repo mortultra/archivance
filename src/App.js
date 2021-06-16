@@ -10,7 +10,7 @@ function App() {
   //initiliaze state to call the firebase inventory data
   const [invArray, setInvArray] = useState([]); 
   const [filteredSeasons, setFilteredSeasons] = useState([]);
-    
+
   // // define the useEffect hook to call the database only once on initialzation
   useEffect(() => {
 
@@ -60,7 +60,7 @@ function App() {
       <header>
         <div className="headerFlex">
           <h1>Archivance</h1>
-          <hr/>
+          <hr />
         </div>
       </header>
       <main className="wrapper">
@@ -68,7 +68,9 @@ function App() {
         <DisplayItems invArray={filteredSeasons} />
       </main>
       <footer>
-        <p>Made at <a href="https://junocollege.com/">Juno</a> 2021</p>
+        <p>
+          Made at <a href="https://junocollege.com/">Juno</a> 2021
+        </p>
       </footer>
     </div>
   );
