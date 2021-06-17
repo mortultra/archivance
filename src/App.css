@@ -385,6 +385,11 @@ button:active, button:focus {
           box-shadow: none;
 }
 
+.siteSummary p {
+  font-size: 1.6rem;
+  line-height: 2.25rem;
+}
+
 footer {
   background-color: #282828;
   color: white;

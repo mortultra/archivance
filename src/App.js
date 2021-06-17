@@ -1,8 +1,9 @@
 import './App.scss';
 import firebase from './firebase.js';
 import { useState, useEffect } from 'react';
-import DisplayItems from './components/DisplayItems.js';
-import UserSelect from './components/UserSelect.js';
+import DisplayItems from './components/DisplayItems';
+import UserSelect from './components/UserSelect';
+import SiteSummary from './components/SiteSummary';
 
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
       </header>
       <main className="wrapper">
         <UserSelect filterSeasons={filterSeasons} />
+        <SiteSummary />
         <DisplayItems invArray={filteredSeasons} />
       </main>
       <footer>

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function SiteSummary() {
   return (
     <div className="siteSummary">
-      <p>Welcome to Archivance, the unofficial Veilance season archive.</p>
+      <p>Welcome to Archivance, the unofficial archive of Canadian technical
+        clothing brand Veilance.</p>
+      <p>Select a season above to get started.</p>
     </div>
   );
 }
