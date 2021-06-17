@@ -14,13 +14,13 @@ select {
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 2px solid $highlightOrange;
+  border-bottom: 1px solid $secondaryGrey;
   margin-right: 25px;
   // cursor: inherit;
 }
 
 select:focus {
-  background-color: $highlightOrange;
+  background-color: $offWhite;
   border-color: $primaryDarkGrey;
 }
 
@@ -31,7 +31,7 @@ button {
   padding: 5px 10px;
   background-color: $offWhite;
   color: $primaryDarkGrey;
-  box-shadow: 2px 2px 0 $highlightOrange;
+  box-shadow: 1px 1px 0 $secondaryGrey;
     &:active,
     &:focus {
         position: relative;

@@ -3,14 +3,16 @@ import React from "react";
 const DisplayItems = (props) => {
   const {invArray} = props;
   return (
-    <div className="itemContainer">
+    <div className="displayContainer">
       {invArray.map((items) => {
         return (
-          <div key={items.key}>
+          <div className="itemContainer" key={items.key}>
             <h2>{items.itemName}</h2>
             <div className="archiveFlex">
               {/* {items.img.forEach(item.img)} */}
-              <img className="archiveImg" src={items.img} alt="" />
+              <div className="archiveImg">
+                <img src={items.img} alt={items.itemName} />
+              </div>
               <div className="archiveInfo">
                 <h3>{items.season}</h3>
                 <h4>Description</h4>

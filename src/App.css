@@ -261,7 +261,7 @@ hr {
   border-bottom: 0.5px solid #282828;
 }
 
-.itemContainer {
+.displayContainer {
   width: 80%;
   min-height: 75vh;
   text-align: left;
@@ -278,6 +278,10 @@ hr {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.itemContainer {
+  margin-bottom: 3%;
 }
 
 h2,
@@ -301,11 +305,13 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+  color: #989898;
 }
 
 p {
   font-size: 1.3rem;
   line-height: 1.65rem;
+  margin: 0;
 }
 
 .archiveFlex {
@@ -322,12 +328,18 @@ p {
   width: 50%;
 }
 
+.archiveInfo ul {
+  padding-left: 10px;
+}
+
 .archiveImg {
   margin-right: 70px;
   min-width: 150px;
-  width: 30%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 40%;
+}
+
+.archiveImg img {
+  width: 100%;
 }
 
 form {
@@ -343,12 +355,12 @@ select {
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 2px solid #ecc24d;
+  border-bottom: 1px solid #989898;
   margin-right: 25px;
 }
 
 select:focus {
-  background-color: #ecc24d;
+  background-color: #f9f9f7;
   border-color: #282828;
 }
 
@@ -361,8 +373,8 @@ button {
   padding: 5px 10px;
   background-color: #f9f9f7;
   color: #282828;
-  -webkit-box-shadow: 2px 2px 0 #ecc24d;
-          box-shadow: 2px 2px 0 #ecc24d;
+  -webkit-box-shadow: 1px 1px 0 #989898;
+          box-shadow: 1px 1px 0 #989898;
 }
 
 button:active, button:focus {
@@ -395,7 +407,7 @@ footer p {
 }
 
 footer p a {
-  color: #ecc24d;
+  color: #989898;
   text-decoration: none;
 }
 
